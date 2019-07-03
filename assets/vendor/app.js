@@ -23,13 +23,13 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#FFFFFF"
+        "value": "#ffffff"
       },
       "shape": {
-        "type": ["edge", "circle", "polygon"],
+        "type": "circle",
         "stroke": {
-          "width": 1,
-          "color": "#89d0e6"
+          "width": 0,
+          "color": "#000000"
         },
         "polygon": {
           "nb_sides": 5
@@ -63,7 +63,7 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#89d0e6",
+        "color": "#ffffff",
         "opacity": 0.4,
         "width": 1
       },
@@ -86,11 +86,11 @@ particlesJS('particles-js',
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "bubble"
         },
         "resize": true
       },
@@ -103,10 +103,10 @@ particlesJS('particles-js',
         },
         "bubble": {
           "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
+          "size": 8,
+          "duration": 4,
+          "opacity": 1,
+          "speed": 6
         },
         "repulse": {
           "distance": 200
@@ -120,6 +120,14 @@ particlesJS('particles-js',
       }
     },
     "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
   }
 
 );
