@@ -1,0 +1,14 @@
+sass:
+    style: compressed
+    load_paths:
+        - _sass
+        - node_modules
+exclude:
+    - node_modules
+    - LICENSE
+    - Makefile
+    - README.md
+    - package.json
+    - package-lock.json
+    - yarn.lock
+

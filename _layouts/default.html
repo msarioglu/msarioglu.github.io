@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            {% include navigation.html %}
+            {{ content }}
+      </div>
+    </div>
+    <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}" type="text/javascript"></script>
+    <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}" type="text/javascript"></script>
+    <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}" type="text/javascript"></script>
+    <script src="{{'/assets/js/scrollSpy.js' | prepend: site.baseurl}}" type="text/javascript"></script>
+	</body>
+</html>
