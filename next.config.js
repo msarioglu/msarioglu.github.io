@@ -6,7 +6,10 @@ module.exports = async (phase, { defaultConfig }) => {
     reactStrictMode: true,
     swcMinify: true,
     compress: true,
-    distDir: 'production',
+    distDir: 'out',
+    images: {
+      unoptimized: true,
+    },
   };
   return nextConfig;
 }
