@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import '@/styles/variables';
+@import '~minireset.css/minireset';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@font-face {
+    font-family: 'Tracks Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tracks Normal'), url('../public/fonts/tracksnormal.woff') format('woff');
+}
+
+html,
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+    min-width: 364px;
+    font-family: "Tracks Normal";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+    margin: 1rem 3rem 1rem 3rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+p {
+    padding: 0.5rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.03em;
+    word-spacing: 0.1em;
+}
+
+a {
+    color: $primary;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f2f2f370;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}

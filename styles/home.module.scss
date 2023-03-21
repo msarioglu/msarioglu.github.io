@@ -1,0 +1,66 @@
+@import '@/styles/variables';
+
+.profile-container {
+  position: relative;
+  min-width: 250px;
+  min-height: 250px;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  border: solid 8px #004dff29;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 92vh;
+  background-color: #091f47db;
+}
+
+.background-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.social-media-container {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-button {
+  color: $secondary;
+  margin: 10px;
+  font-size: 2em;
+}
+
+.title {
+  z-index: 100;
+  font-weight: 600;
+  color: $primary;
+}
+
+.sub-title {
+  z-index: 100;
+  font-weight: 600;
+  color: $primary;
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page {
+    min-height: 100vh;
+  }
+}

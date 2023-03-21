@@ -1,0 +1,111 @@
+@import '@/styles/variables';
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 3.25rem;
+}
+
+.brand-image {
+    width: 7rem;
+}
+
+.navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.navbar-items {
+    max-height: 0;
+    transition: max-height 600ms ease-out;
+    overflow: hidden;
+}
+
+.is-unfolded .navbar-items {
+    max-height: 200px;
+}
+
+.navbar-footer {
+    display: none;
+    color: $secondary;
+    font-size: 1.0em;
+    font-weight: 125;
+}
+
+.navbar-burger::before {
+    content: "\f0c9";
+}
+
+.navbar-burger {
+    color: $secondary;
+    font-family: "Font Awesome 6 Free";
+    font-size: 2em;
+    font-weight: 900;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-item {
+    padding: 0.5rem 0.75rem;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.navbar-item > a {
+    color: $secondary;
+}
+
+.navbar-item > a:hover {
+    color: #f2f2f370;
+}
+
+.is-unfolded {
+    display: flex;
+}
+
+.active-item > a {
+    color: $primary;
+  }
+
+@media screen and (min-width: 1024px) {
+
+    .navbar-menu {
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+    }
+
+    .navbar-items {
+        max-height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-burger {
+        display: none;
+    }
+}
