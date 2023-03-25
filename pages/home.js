@@ -36,8 +36,8 @@ export default function Home() {
                 <a className={styles['social-media-button']} href="https://www.facebook.com/sarioglumuhammed">
                     <i className={`fab fa-facebook`}></i>
                 </a>
-                <a className={styles['social-media-button']}
-                    href="https://www.linkedin.com/in/muhammet-sarioglu-5105b27a/">
+                <a className={`${styles['social-media-button']}`}
+                    href="https://www.linkedin.com/in/muhammet-s-5105b27a/">
                     <i className={`fab fa-linkedin`}></i>
                 </a>
                 <a className={styles['social-media-button']} href="https://github.com/msarioglu">
