@@ -4,20 +4,20 @@ import profileImage from '@/public/images/about-profile.jpg';
 
 export default function About() {
     return (
-        <section id='about' className={`${styles['about-page']}`}>
-            <div className={`${styles['header']}`}>
-                <i className={`${styles['header-icon']}`}></i>
+        <section id='about' className={styles['about-page']}>
+            <div className={styles['header']}>
+                <i className={styles['header-icon']}></i>
                 <h2>About me</h2>
             </div>
-            <div className={`${styles['container']}`}>
-                <div className={`${styles['row']}`}>
+            <div className={styles['container']}>
+                <div className={styles['row']}>
                     <Image
                         src={profileImage}
                         alt={'About profile photo'}
                         className={styles['profile-image']}
                         priority
                     />
-                    <div className={`${styles['column']}`}>
+                    <div className={styles['column']}>
                         <p>
                         I am a software engineer with a diverse range of experience in the field. I graduated from HAN University of Applied Sciences in 2021, where I gained a solid foundation in software engineering principles such as UML, SCRUM, and SOLID.
                         </p>
@@ -36,11 +36,11 @@ export default function About() {
                     </div>
                 </div>
                 <hr></hr>
-                <div className={`${styles['row']}`}>
+                <div className={styles['row']}>
                     <h2>Skills</h2>
                 </div>
-                <div className={`${styles['row']} ${styles['skills']}`}>
-                    <div>
+                <div className={styles['row']}>
+                    <div className={styles['skills']}>
                         <h3>Programming Languages</h3>
                         <ul>
                             <li>Java</li>
@@ -54,7 +54,7 @@ export default function About() {
                             <li>SQL</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className={styles['skills']}>
                         <h3>Frameworks</h3>
                         <ul>
                             <li>.NET</li>
@@ -66,7 +66,7 @@ export default function About() {
                             <li>React</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className={styles['skills']}>
                         <h3>Development Tools</h3>
                         <ul>
                             <li>Git</li>

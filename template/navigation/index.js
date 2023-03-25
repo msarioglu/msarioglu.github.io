@@ -59,7 +59,7 @@ export default function Navigation() {
                             About
                         </a>
                     </li>
-                    <li className={`${styles['navbar-item']}`}>
+                    <li className={`${styles['navbar-item']}`} data-to-scrollspy-id="projects">
                         <a href='#projects' onClick={(e) => onPress(e)} >
                             Projects
                         </a>
