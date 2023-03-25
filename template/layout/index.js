@@ -12,10 +12,10 @@ export default function Layout({ children }) {
 
             <Head>
                 <meta charSet='utf-8' />
-                <meta name='viewport' content='width=device-width, initial-scale=1' />
+                <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
                 <title>{title}</title>
                 <meta name='description' content={`${description}`} />
-                <link rel='icon' href="icons/favicon.ico" />
+                <link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
                 <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png" />
                 <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png" />
@@ -33,8 +33,6 @@ export default function Layout({ children }) {
                 <meta name="msapplication-TileColor" content="#081b3d" />
                 <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png" />
                 <meta name="theme-color" content="#081b3d" />
-
-
             </Head>
 
             <nav className={styles['navbar']}

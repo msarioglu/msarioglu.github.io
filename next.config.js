@@ -6,7 +6,15 @@ module.exports = async (phase, { defaultConfig }) => {
     reactStrictMode: true,
     swcMinify: true,
     compress: true,
-    exportPathMap: 'out',
+    exportPathMap: async function (
+      defaultPathMap,
+      { dev, dir, outDir, distDir, buildId }
+    ) {
+      return {
+        '/home': { page: '/home' },
+        '/about': { page: '/about' },
+      }
+    },
     images: {
       unoptimized: true,
     },

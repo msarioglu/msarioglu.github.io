@@ -1,0 +1,101 @@
+@import '@/styles/variables';
+
+.projects-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 92vh;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  color: $dark;
+}
+
+.git-button {
+  background-color: $dark;
+  border-radius: 0.5rem;
+  width: 50%;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: $secondary;
+}
+
+.git-icon::before {
+  content: "\f092";
+}
+
+.git-icon {
+  font-family: "Font Awesome 6 Brands";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  margin-left: 0.5rem;
+}
+
+.header-icon::before {
+  content: "\f0b1";
+}
+
+.header-icon {
+  font-family: "Font Awesome 6 Free";
+  font-size: 4rem;
+  font-weight: 900;
+  font-style: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  margin-left: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: inherit;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  padding: 0 3rem 1rem 3rem;
+  justify-content: space-evenly;
+}
+
+.project-item {
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: $secondary;
+  padding: 1rem;
+  width: 12rem;
+  height: 16rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.project-description {
+  font-size: 0.9rem;
+}
+
+.project-icon {
+  height: 64px;
+  width: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects-page {
+    min-height: 100vh;
+  }
+}
