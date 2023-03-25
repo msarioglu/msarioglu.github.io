@@ -10,7 +10,6 @@ export default function Index() {
             activeClass={navStyles['active-item']}
             scrollThrottle={30}
             useBoxMethod={false}
-            updateHistoryStack={false}
             >
             <Home />
             <About />
