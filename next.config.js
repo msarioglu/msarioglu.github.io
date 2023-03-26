@@ -11,9 +11,7 @@ module.exports = async (phase, { defaultConfig }) => {
       { dev, dir, outDir, distDir, buildId }
     ) {
       return {
-        '/home': { page: '/home' },
-        '/about': { page: '/about' },
-        '/projects': { page: '/projects' },
+        '/': { page: '/' }
       }
     },
     images: {
