@@ -1,12 +1,12 @@
 import styles from '@/styles/about.module.scss';
 import Image from 'next/image';
-import profileImage from '@/public/images/about-profile.jpg';
+import profileImage from '@/public/images/about-profile-2.jpg';
 
 export default function About() {
     return (
         <section id='about' className={styles['about-page']}>
             <div className={styles['header']}>
-                <i className={styles['header-icon']}></i>
+                <i className={`${styles['title-icon']} ${styles['header-icon']}`}/>
                 <h2>About me</h2>
             </div>
             <div className={styles['container']}>
@@ -33,49 +33,6 @@ export default function About() {
                         <p>
                         With my exceptional technical skills, attention to detail, and commitment to delivering high-quality software solutions, I am an asset to any organization I work with.
                         </p>
-                    </div>
-                </div>
-                <hr></hr>
-                <div className={styles['row']}>
-                    <h2>Skills</h2>
-                </div>
-                <div className={styles['row']}>
-                    <div className={styles['skills']}>
-                        <h3>Programming Languages</h3>
-                        <ul>
-                            <li>Java</li>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>PHP</li>
-                            <li>TypeScript</li>
-                            <li>JavaScript</li>
-                            <li>Swift</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <div className={styles['skills']}>
-                        <h3>Frameworks</h3>
-                        <ul>
-                            <li>.NET</li>
-                            <li>EntityFramework</li>
-                            <li>Spring</li>
-                            <li>Swagger</li>
-                            <li>Flask</li>
-                            <li>Angular</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                    <div className={styles['skills']}>
-                        <h3>Development Tools</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>Jira</li>
-                            <li>Docker</li>
-                            <li>Jenkins</li>
-                            <li>SonarQube</li>
-                            <li>Confluence</li>
-                        </ul>
                     </div>
                 </div>
             </div>
