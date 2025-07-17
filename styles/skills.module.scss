@@ -1,0 +1,116 @@
+@use '@/styles/variables';
+
+.skills-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 92vh;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  color: variables.$dark;
+}
+
+.header-icon::before {
+  content: "\f508";
+}
+
+.title-icon {
+  font-family: "Font Awesome 6 Free";
+  font-size: 4rem;
+  font-weight: 900;
+  font-style: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  margin-left: auto;
+}
+
+.skills-icon::before {
+  content: "\f44b";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: inherit;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  padding: 0 3rem 1rem 3rem;
+  justify-content: center;
+}
+
+.skills {
+  text-align: center;
+  width: 100%;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin: 0.15rem 0.1rem 0.15rem 0.1rem;
+  padding: 0.5rem;
+  color: variables.$dark;
+  border: 1px solid variables.$secondary;
+  border-radius: 1rem;
+  background-color: variables.$light;
+  width: 20vw;
+}
+
+.skill-primary {
+  background-color: variables.$primary;
+  color: variables.$light;
+  border-color: variables.$primary;
+}
+
+.column {
+  font-size: .9rem;
+  display: inherit;
+  flex-basis: max-content;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+@media screen and (max-width: 586px) {
+  .skill {
+    width: 16vw;
+    min-width: 85px;
+
+  }
+  .skills {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skill {
+    width: 9vw;
+    max-width: 100px;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .skills-page {
+    min-height: 100vh;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+}

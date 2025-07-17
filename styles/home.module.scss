@@ -1,4 +1,4 @@
-@import '@/styles/variables';
+@use '@/styles/variables';
 
 .profile-container {
   position: relative;
@@ -7,11 +7,13 @@
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
-  border: solid 8px #004dff29;
+  border: solid 8px rgba(variables.$primary, 0.3);
 }
 
 .profile-img {
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .home-page {
@@ -21,7 +23,7 @@
   align-items: center;
   justify-content: center;
   min-height: 92vh;
-  background-color: #091f47db;
+  background-color: rgba(variables.$dark, 0.9);
 }
 
 .background-image {
@@ -42,7 +44,7 @@
 }
 
 .social-media-button {
-  color: $secondary;
+  color: variables.$secondary;
   margin: 10px;
   font-size: 2em;
 }
@@ -50,13 +52,13 @@
 .title {
   z-index: 100;
   font-weight: 600;
-  color: $primary;
+  color: variables.$primary;
 }
 
 .sub-title {
   z-index: 100;
   font-weight: 600;
-  color: $primary;
+  color: variables.$primary;
 }
 
 @media screen and (min-width: 1024px) {

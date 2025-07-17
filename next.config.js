@@ -4,7 +4,6 @@ module.exports = async (phase, { defaultConfig }) => {
    */
   const nextConfig = {
     reactStrictMode: true,
-    swcMinify: true,
     compress: true,
     exportPathMap: async function (
       defaultPathMap,

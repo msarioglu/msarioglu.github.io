@@ -1,30 +1,33 @@
-@import '@/styles/variables';
+@use '@/styles/variables';
 
 .projects-page {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 92vh;
 }
 
 .header {
   text-align: center;
   padding: 10px;
-  color: $dark;
+  color: variables.$dark;
 }
 
 .git-button {
-  background-color: $dark;
-  border-radius: 0.5rem;
+  background-color: variables.$primary;
+  border-color: variables.$primary;
+  border-radius: 0.7rem;
   width: 50%;
-  padding: 0.2rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
-  color: $secondary;
+  color: variables.$light;
+  min-width: 85px;
 }
 
 .git-icon::before {
@@ -73,11 +76,12 @@
 
 .project-item {
   display: flex;
-  border-radius: 0.5rem;
-  background-color: $secondary;
+  color: variables.$dark;
+  border: 1px solid variables.$secondary;
+  border-radius: 1rem;
+  background-color: variables.$light;
   padding: 1rem;
   width: 12rem;
-  height: 16rem;
   text-align: center;
   flex-direction: column;
   align-items: center;
@@ -86,7 +90,7 @@
 }
 
 .project-description {
-  font-size: 0.9rem;
+  font-size: clamp(1rem, 0.5vw, 1.2rem);
 }
 
 .project-icon {

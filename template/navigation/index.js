@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import react from 'react';
 import Image from 'next/image';
 import styles from '@/template/navigation/index.module.scss'
 import Footer from "@/template/footer";
 import brandImage from '@/public/images/logo.png';
 
 export default function Navigation() {
-    const [isUnfolded, setIsUnfolded] = useState(false);
+    const [isUnfolded, setIsUnfolded] = react.useState(false);
     const navbarToggle = isUnfolded
         ? styles['is-unfolded']
         : '';
@@ -57,6 +57,11 @@ export default function Navigation() {
                     <li className={`${styles['navbar-item']}`} data-to-scrollspy-id="about">
                         <a href={'#about'} onClick={(e) => onPress(e)}>
                             About
+                        </a>
+                    </li>
+                    <li className={`${styles['navbar-item']}`} data-to-scrollspy-id="skills">
+                        <a href={'#skills'} onClick={(e) => onPress(e)}>
+                            Skills
                         </a>
                     </li>
                     <li className={`${styles['navbar-item']}`} data-to-scrollspy-id="projects">

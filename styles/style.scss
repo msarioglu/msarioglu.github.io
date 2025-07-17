@@ -1,8 +1,8 @@
 @charset "utf-8";
-@import '@/styles/variables';
-@import '~minireset.css/minireset';
-@import '~@fortawesome/fontawesome-free/scss/brands';
-@import '~@fortawesome/fontawesome-free/scss/solid';
+@use '@/styles/variables';
+@use '~minireset.css/minireset';
+@use '~@fortawesome/fontawesome-free/scss/brands';
+@use '~@fortawesome/fontawesome-free/scss/solid';
 
 @font-face {
     font-family: 'Tracks Normal';
@@ -33,13 +33,13 @@ hr {
 
 p {
     padding: 0.5rem;
-    line-height: 1.3rem;
     letter-spacing: 0.03em;
     word-spacing: 0.1em;
+    font-size: clamp(1rem, 1.0vw, 1.7rem);
 }
 
 a {
-    color: $primary;
+    color: variables.$primary;
     cursor: pointer;
     text-decoration: none;
 }
@@ -49,16 +49,21 @@ a:hover {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 1.5rem + 2vw, 4rem);
     padding-bottom: 0.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1rem + 1.5vw, 3rem);
     padding-bottom: 0.5rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
+    padding-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: clamp(1.2rem, 1rem + 0.2vw, 1.8rem);
     padding-bottom: 0.5rem;
 }

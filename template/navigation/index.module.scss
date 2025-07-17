@@ -1,4 +1,4 @@
-@import '@/styles/variables';
+@use '@/styles/variables';
 
 .container {
     height: 100%;
@@ -15,7 +15,7 @@
 }
 
 .brand-image {
-    width: 7rem;
+    width: clamp(5em, 5vw, 10em);
 }
 
 .navbar-menu {
@@ -39,8 +39,7 @@
 
 .navbar-footer {
     display: none;
-    color: $secondary;
-    font-size: 1.0em;
+    color: variables.$secondary;
     font-weight: 125;
 }
 
@@ -49,7 +48,7 @@
 }
 
 .navbar-burger {
-    color: $secondary;
+    color: variables.$secondary;
     font-family: "Font Awesome 6 Free";
     font-size: 2em;
     font-weight: 900;
@@ -68,10 +67,11 @@
     position: relative;
     cursor: pointer;
     justify-content: center;
+    font-size: clamp(1rem, 1vw, 2.5rem);
 }
 
 .navbar-item > a {
-    color: $secondary;
+    color: variables.$secondary;
 }
 
 .navbar-item > a:hover {
@@ -83,7 +83,7 @@
 }
 
 .active-item > a {
-    color: $primary;
+    color: variables.$primary;
   }
 
 @media screen and (min-width: 1024px) {

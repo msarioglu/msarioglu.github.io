@@ -1,6 +1,7 @@
 import navStyles from '@/template/navigation/index.module.scss'
 import Home from '@/pages/home';
 import About from '@/pages/about';
+import Skills from '@/pages/skills';
 import Projects from '@/pages/projects';
 import ScrollSpy from "react-ui-scrollspy";
 
@@ -14,6 +15,7 @@ export default function Index() {
             >
             <Home />
             <About />
+            <Skills />
             <Projects />
         </ScrollSpy>
     )

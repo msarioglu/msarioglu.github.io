@@ -1,8 +1,7 @@
-$primary: #86d0e7;
-$secondary: #f2f2f2;
-$light: #ffffff;
-$dark: #081b3d;
-
+$primary: #5ca0d3;     // A cooler, more grounded blue
+$secondary: #e0e0e0;   // A softer gray tone
+$light: #fdfdfd;       // Very light gray instead of pure white
+$dark: #1a1a1a;        // Off-black for a gentler contrast
 
 .primary-text {
     color: $primary;
@@ -19,4 +18,3 @@ $dark: #081b3d;
 .dark-text {
     color: $dark;
 }
-
