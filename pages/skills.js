@@ -4,7 +4,7 @@ export default function Skills() {
     return (
       <section id="skills" className={styles["skills-page"]}>
         <div className={styles["header"]}>
-          <i className={`${styles["title-icon"]} ${styles["skills-icon"]}`}/>
+          <i className={`${styles["header-icon"]} fa-solid fa-dumbbell`}/>
           <h2>Skills</h2>
         </div>
         <div className={styles["row"]}>

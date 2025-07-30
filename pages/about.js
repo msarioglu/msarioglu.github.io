@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section id="about" className={styles["about-page"]}>
       <div className={styles["header"]}>
-        <i className={`${styles["title-icon"]} ${styles["header-icon"]}`} />
+        <i className={`${styles["header-icon"]} fa-solid fa-user-tie`}/>
         <h2>About me</h2>
       </div>
       <div className={styles["container"]}>

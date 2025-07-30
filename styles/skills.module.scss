@@ -15,12 +15,7 @@
   color: variables.$dark;
 }
 
-.header-icon::before {
-  content: "\f508";
-}
-
-.title-icon {
-  font-family: "Font Awesome 6 Free";
+.header-icon {
   font-size: 4rem;
   font-weight: 900;
   font-style: normal;
@@ -29,10 +24,6 @@
   line-height: 1;
   text-rendering: auto;
   margin-left: auto;
-}
-
-.skills-icon::before {
-  content: "\f44b";
 }
 
 .container {

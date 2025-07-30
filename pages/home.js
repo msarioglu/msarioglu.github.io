@@ -48,13 +48,13 @@ export default function Home() {
             <div className={styles['social-media-container']}>
                 <a className={`${styles['social-media-button']}`}
                     target="_blank" href="https://www.linkedin.com/in/muhammet-s-5105b27a/">
-                    <i className={`fab fa-linkedin`}/>
+                    <i className={`fa-brands fa-linkedin`}/>
                 </a>
                 <a className={styles['social-media-button']} target="_blank" href="https://github.com/msarioglu">
-                    <i className={`fab fa-github`}/>
+                    <i className={`fa-brands fa-github`}/>
                 </a>
                 <a className={styles['social-media-button']} target="_blank" href="https://www.instagram.com/msrgl_61/">
-                    <i className={`fab fa-instagram`}/>
+                    <i className={`fa-brands fa-instagram`}/>
                 </a>
             </div>
         </section>

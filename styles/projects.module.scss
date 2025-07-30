@@ -30,12 +30,7 @@
   min-width: 85px;
 }
 
-.git-icon::before {
-  content: "\f092";
-}
-
 .git-icon {
-  font-family: "Font Awesome 6 Brands";
   font-size: 1.5rem;
   font-style: normal;
   font-feature-settings: normal;
@@ -45,12 +40,8 @@
   margin-left: 0.5rem;
 }
 
-.header-icon::before {
-  content: "\f0b1";
-}
 
 .header-icon {
-  font-family: "Font Awesome 6 Free";
   font-size: 4rem;
   font-weight: 900;
   font-style: normal;

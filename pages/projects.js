@@ -7,7 +7,7 @@ export default function Projects() {
     return (
         <section id='projects' className={styles['projects-page']}>
             <div className={styles['header']}>
-                <i className={styles['header-icon']}/>
+                <i className={`${styles['header-icon']} fa-solid fa-briefcase`}/>
                 <h2>Projects</h2>
             </div>
             <div className={styles['container']}>
@@ -23,7 +23,7 @@ export default function Projects() {
                             A basic iOS themed calculator build with Ionic.
                         </p>
                         <a target="_blank" href="https://github.com/msarioglu/iOS-Calculator" className={styles['git-button']}>
-                            Git <i className={styles['git-icon']}/>
+                            Git <i className={`${styles['git-icon']} fa-brands fa-github-square`}/>
                         </a>
                     </div>
                 </div>
