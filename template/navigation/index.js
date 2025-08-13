@@ -41,8 +41,9 @@ export default function Navigation() {
         />
         <button
           onClick={() => setIsUnfolded(!isUnfolded)}
-          className={styles["navbar-burger"]}
-        />
+          className={styles["navbar-burger"]}>
+          <i className={`fa fa-bars`} aria-hidden="true"/>
+        </button>
       </div>
 
       <div className={`${styles["navbar-menu"]} ${navbarToggle}`}>

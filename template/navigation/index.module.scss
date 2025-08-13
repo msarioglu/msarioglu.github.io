@@ -43,13 +43,8 @@
     font-weight: 125;
 }
 
-.navbar-burger::before {
-    content: "\f0c9";
-}
-
 .navbar-burger {
     color: variables.$secondary;
-    font-family: "Font Awesome 6 Free";
     font-size: 2em;
     font-weight: 900;
     font-style: normal;
